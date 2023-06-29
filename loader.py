@@ -13,7 +13,7 @@ class Loader(Dataset):
         self.mode = mode
         self.dataset = dataset
         self.down_sample = 1
-        self.root_dir = '/dataset/gyy/mot/dataset'
+        self.root_dir = 'dataset'
         self.dataset_dir = os.path.join(self.root_dir, dataset)
 
         if self.mode == 'train':
