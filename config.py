@@ -12,7 +12,7 @@ LEARNING_RATE = 1e-5
 MAX_EPOCH = 1000
 
 NETWORK = 'resnet'
-RE_ID = '0'
+RE_ID = 0
 if RE_ID:
     TRAIN_RESUME = "./models/" + RE_ID + '.pth'
 MODEL_SAVE_NAME = "./models/" + EX_ID + '.pth'
