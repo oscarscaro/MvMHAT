@@ -89,9 +89,9 @@ class Loader(Dataset):
         for view in self.view_ls:
             anno_view_dict = defaultdict(list)
             if self.mode == 'train':
-                anno_path = os.path.join(self.dataset_dir, view, 'gt_det', 'gt.txt')
+                anno_path = os.path.join(self.dataset_dir, view, 'gt_det', 'anno.txt') ## gt.txt TO ANNO
             elif self.mode == 'test':
-                anno_path = os.path.join(self.dataset_dir, view, 'gt_det', 'det.txt')
+                anno_path = os.path.join(self.dataset_dir, view, 'gt_det', 'det.txt') ## det.txt
             with open(anno_path, 'r') as anno_file:
                 anno_lines = anno_file.readlines()
                 for anno_line in anno_lines:
